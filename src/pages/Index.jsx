@@ -3,7 +3,7 @@ import { Link as RouterLink } from "react-router-dom";
 
 const Index = () => {
   return (
-    <Container maxW="container.xl" p={0}>
+    <Container maxW="container.xl" p={0} bg="#f3f2ef">
       {/* Navigation Bar */}
       <Box bg="gray.800" color="white" py={4}>
         <Flex justify="space-between" align="center" maxW="container.xl" mx="auto" px={4}>
@@ -56,7 +56,7 @@ const Index = () => {
         </Box>
 
         {/* Sidebar for Trending Topics */}
-        <Box flex="1" bg="gray.100" p={4} borderRadius="md">
+        <Box flex="1" bg="#f3f2ef" p={4} borderRadius="md">
           <Heading as="h3" size="lg" mb={4}>
             Trending Topics
           </Heading>
@@ -71,7 +71,7 @@ const Index = () => {
       </Flex>
 
       {/* Footer */}
-      <Box bg="gray.800" color="white" py={4} mt={8}>
+      <Box bg="#f3f2ef" color="white" py={4} mt={8}>
         <Flex justify="space-between" align="center" maxW="container.xl" mx="auto" px={4}>
           <HStack spacing={8}>
             <Link as={RouterLink} to="/about" _hover={{ textDecoration: "none", color: "gray.400" }}>
